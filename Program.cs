@@ -91,13 +91,17 @@ void ChooseAction()
 {
     while (MainPlayer.IsAlive)
     {
+
+        Print(new string('=', 50));
+        Print("");
+        Print("");
+
         if(Enemy == null || !Enemy.IsAlive)
         {
             Enemy = CreateEnemy();
         }
 
         ShowStatus(MainPlayer);
-        Print("");
         Print("");
         ShowStatus(Enemy);
         
@@ -150,7 +154,11 @@ void ChooseAction()
 void Battle()
 {
     MainPlayer.Attack(Enemy);
-    Enemy.Attack(MainPlayer);
+    if (Enemy.IsAlive)
+    {
+        Enemy.Attack(MainPlayer);
+    }
+    
 }
 
 void UseItem()
