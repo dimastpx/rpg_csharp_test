@@ -134,19 +134,10 @@ void ChooseAction()
                 break;
         }   
 
-        if (Enemy.IsAlive && !MainPlayer.IsAlive)
+        if (!MainPlayer.IsAlive)
         {
         Print($"Вы умерли! Вас убил {Enemy.Name}");
         return;
-        }
-        else if(!Enemy.IsAlive && !MainPlayer.IsAlive)
-        {
-            Print($"Вы умерли одновременно с {Enemy.Name}");
-            return;
-        }
-        else if(!Enemy.IsAlive && MainPlayer.IsAlive)
-        {
-            Print($"Вы победили {Enemy.Name}");
         }
     }
 }
@@ -158,17 +149,21 @@ void Battle()
     {
         Enemy.Attack(MainPlayer);
     }
-    
+    else
+    {
+        Print($"Вы победили {Enemy.Name} и получили {Enemy.GiveXp}");
+        MainPlayer.AddXp(Enemy.GiveXp);
+    }
 }
 
 void UseItem()
 {
-    return;
+
 }
 
 void TryEscape()
 {
-    return;
+
 }
 
 

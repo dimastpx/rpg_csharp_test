@@ -5,7 +5,7 @@ public enum ZombieStage
     Stage1, Stage2, Stage3, Stage4
 }
 public class Zombie(ZombieStage stage)
-    : Entity("Зомби", GetByStage(stage)[0], GetByStage(stage)[1])
+    : Entity("Зомби", GetByStage(stage)[0], GetByStage(stage)[1], 30)
 {
     private static int[] GetByStage(ZombieStage _stage)
     {
