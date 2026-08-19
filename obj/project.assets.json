@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dimas\\Desktop\\test\\test.csproj",
+      "projectUniqueName": "C:\\Users\\dimas\\Desktop\\rpg_csharp_test\\test.csproj",
       "projectName": "test",
-      "projectPath": "C:\\Users\\dimas\\Desktop\\test\\test.csproj",
+      "projectPath": "C:\\Users\\dimas\\Desktop\\rpg_csharp_test\\test.csproj",
       "packagesPath": "C:\\Users\\dimas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dimas\\Desktop\\test\\obj\\",
+      "outputPath": "C:\\Users\\dimas\\Desktop\\rpg_csharp_test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dimas\\AppData\\Roaming\\NuGet\\NuGet.Config"
