@@ -1,0 +1,2 @@
+C:\Users\dimas\Desktop\rpg_csharp_test\dist\test.pdb
+C:\Users\dimas\Desktop\rpg_csharp_test\dist\test.exe

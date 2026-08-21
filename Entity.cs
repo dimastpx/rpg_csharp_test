@@ -1,13 +1,13 @@
 using System.ComponentModel;
 
 namespace Test;
-public class Entity(string name, int health, int damage, int giveXp)
+public class Entity(string name, int health, int damage, int givenXp)
 {
     public string Name{get; private set; } = name;
     public int Health{get; private set; } = health;
     public int MaxHealth{get; private set; } = health;
     public int Damage{get; private set; } = damage;
-    public int GiveXp{get;} = giveXp;
+    public int GivenXp{get;} = givenXp;
     public bool IsAlive{get; private set; } = true;
     public List<Effect> Effects{get; private set;} = [];
     public List<Property> Properties{get; private set;} = [];

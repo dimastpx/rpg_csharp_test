@@ -47,6 +47,11 @@ Entity CreateEnemy()
     };
 }
 
+void PrintVictory()
+{
+    Print($"Вы победили {Enemy.Name} и получили {Enemy.GivenXp}");
+}
+
 void ShowStatus(Entity entity)
 {
     Print($"===== {entity.Name} =====");
@@ -151,8 +156,8 @@ void Battle()
     }
     else
     {
-        Print($"Вы победили {Enemy.Name} и получили {Enemy.GiveXp}");
-        MainPlayer.AddXp(Enemy.GiveXp);
+        Print($"Вы победили {Enemy.Name} и получили {Enemy.GivenXp} опыта");
+        MainPlayer.AddXp(Enemy.GivenXp);
     }
 }
 
